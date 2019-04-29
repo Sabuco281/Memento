@@ -1,3 +1,5 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class CalculatorController {
 
@@ -13,7 +15,7 @@ public class CalculatorController {
 		}
 		class CalculateListener implements ActionListener{
 			
-			public void actionPerformed(ActionEvent arg0){
+			public void actionPerformed1(ActionEvent arg0){
 				
 				int firstNumber, secondNumber= 0;
 				
@@ -32,5 +34,11 @@ public class CalculatorController {
 				}
 			
 		}
+
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				
+			}
 		}
 }

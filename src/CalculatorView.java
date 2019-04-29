@@ -1,6 +1,8 @@
 import java.awt.event.ActionListener;
 
 import javax.swing.*;
+
+
 public class CalculatorView extends JFrame {
 	
 	private JTextField firstNumber= new JTextField(10);
@@ -46,9 +48,9 @@ public class CalculatorView extends JFrame {
 
 	}
 	
-	void addCalculationListener(ActionListener listenerForCalcButton){
+	void addCalculationListener(ActionListener calculateListener){
 		
-		calculateButton.addActionListener(listenerForCalcButton);
+		calculateButton.addActionListener(calculateListener);
 	}
 	
 	void displayErrorMessage(String errorMessage){
